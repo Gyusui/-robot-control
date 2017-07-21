@@ -46,18 +46,8 @@ void loop() {
     //rpm2 = (float)rightCount*60/20;//60をかけるかどうかわからない
     rpm1 = (float)old_time_Lcount/20*10;
     rpm2 = (float)old_time_Rcount/20*10;
-    /*Serial.print("rpm1=");
-    Serial.print(rpm1);
-    Serial.print("rpm2=");
-    Serial.println(rpm2);*/    
     w1 = PI*2*rpm1;        //w1,w2の現在値、
     w2 = PI*2*rpm2;
-    /*Serial.print("w1 =");
-    Serial.print(w1);
-    Serial.print("w2 =");
-    Serial.println(w2);*/
-    //forward();
-    //delay(1000);
     turnDegree(90);
     //delay(500);
 }
